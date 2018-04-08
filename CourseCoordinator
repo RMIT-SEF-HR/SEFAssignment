@@ -1,0 +1,55 @@
+package courseCoordinator;
+
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+import java.util.Scanner;
+import java.util.Vector;
+
+public class courseCoordinator {
+
+	private static final String Project = null;
+
+	public static void main(String[] args) {
+		Scanner in = new Scanner(System.in);
+		
+		System.out.println("1. Request Employees");
+		System.out.println("2. Create New Project");
+		System.out.println("3. View Project");
+		
+
+		int option = in.nextInt();
+		
+		if (option == 1) {
+				
+		}
+		
+		//CREATE NEW PROJECT
+		else if (option == 2) 
+		{
+			try{
+				System.out.print("Enter Project Code: ");
+				Scanner input = new Scanner(System.in);
+				String pro_code = input.next();
+				System.out.print("Enter Status: ");
+				String status = input.next();
+				System.out.print("Enter Department Code: ");
+				String dept_code = input.next();
+				
+				Project p = new Project();
+				p.setDepartment_Code(dept_code);
+				p.setProject_Code(pro_code);
+				p.setStatus(status);
+
+				}
+			finally {
+			 
+			}
+					
+		}
+		
+		else if (option == 3) {
+			
+			System.out.print("" + Project);
+		}
+	}
+}
