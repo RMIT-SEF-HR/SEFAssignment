@@ -1,0 +1,24 @@
+public class approval {
+private String approvalsname;
+private String approvalsID;
+	public approval() {
+	approvalsname="";
+	approvalsID="";
+	}
+public approval (String approvalsname, String approvalsID) {
+	this.approvalsname=approvalsname;
+	this.approvalsID=approvalsID;
+}
+public String getapprovalsname() {
+	return approvalsname;
+}
+public void setapprovalsname(String approvalsname) {
+	this.approvalsname=approvalsname;
+}
+public String getapprovalsID() {
+	return approvalsID;
+}
+public void setapprovalsID(String approvalsID) {
+	this.approvalsID=approvalsID;
+}
+}
