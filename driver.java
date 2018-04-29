@@ -4,15 +4,14 @@ import java.util.*;
 public class driver
 {
     	public void run() {
-    	    Scanner scan = new Scanner (new File("the\\dir\\myFile.extension"));
-    	    Scanner keyboard = new Scanner (System.in);
-    	    String user = scan.nextLine();
-    	    String pass = scan.nextLine(); // looks at selected file in scan
+                Scanner scan = new Scanner (System.in);
+System.out.println("HR Management System");
+  System.out.println("Enter username");
+	    String user = scan.nextLine();
+System.out.println("Enter password");
+	    String pass = scan.nextLine(); // looks at selected file in scan
 
-    	    String inpUser = keyboard.nextLine();
-    	    String inpPass = keyboard.nextLine(); // gets input from user
-
-    	    if (inpUser.equals(user) && inpPass.equals(pass)) {
+	    if (user.equals("admin") && pass.equals("rmit")) {
     	        System.out.print("Successfully logged in!");
                 int city=scan.nextInt();
     			  switch (city)
@@ -22,6 +21,23 @@ public class driver
     			  break;
     			  case 2:
     				System.out.println("Course coordinator");
+                          String coordinatorname=null;
+
+				String coordinatorID=null;
+
+				courseCoordinator b=new courseCoordinator(coordinatorname,coordinatorID);
+
+				System.out.println("Enter course coordinator's name");
+
+				coordinatorname = scan.nextLine();
+
+				System.out.println("Enter course coordinator's ID");
+
+				coordinatorID=scan.nextLine();
+
+				System.out.println("Review requests made by course coordinator");
+
+				System.out.println("Type in the request that you would like to approve");
     				break;
     			  case 3:
     				System.out.println("Approvals");
