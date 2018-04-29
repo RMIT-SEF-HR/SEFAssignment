@@ -1,0 +1,45 @@
+public class courseCoordinator {
+	private String coordinatorname;
+
+	private String coordinatorID;
+
+		public courseCoordinator() {
+
+		coordinatorname="";
+
+		coordinatorID="";
+
+		}
+
+	public CourseCoordinator (String coordinatiorname, String coordinatorID) {
+
+		this.coordinatorname=coordinatorname;
+
+		this.coordinatorID=coordinatorID;
+
+	}
+
+	public String getcoordinatorname() {
+
+		return coordinatorname;
+
+	}
+
+	public void setcoordinatorname(String coordinatorname) {
+
+		this.coordinatorname=coordinatorname;
+
+	}
+
+	public String getcoordinatorID() {
+
+		return coordinatorID;
+
+	}
+
+	public void setcoordinatorID(String coordinatorID) {
+
+		this.coordinatorID=coordinatorID;
+
+	}
+}
