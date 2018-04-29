@@ -1,0 +1,45 @@
+public class course {
+	private String courseID;
+
+	private String coursename;
+
+		public course() {
+
+		courseID="";
+
+		coursename="";
+
+		}
+
+	public course (String courseID, String coursename) {
+
+		this.courseID=courseID;
+
+		this.coursename=coursename;
+
+	}
+
+	public String getcourseID() {
+
+		return courseID;
+
+	}
+
+	public void setcourseID(String courseID) {
+
+		this.courseID=courseID;
+
+	}
+
+	public String getcoursename() {
+
+		return coursename;
+
+	}
+
+	public void setcoursename(String coursename) {
+
+		this.coursename=coursename;
+
+	}
+}
