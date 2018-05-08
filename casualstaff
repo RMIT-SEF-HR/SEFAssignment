@@ -1,0 +1,27 @@
+
+public class casualstaff {
+private String staffname;
+private String staffID;
+
+public casualstaff() {
+	staffname="";
+	staffID="";
+	
+}
+public casualstaff(String staffname, String staffID) {
+	this.staffname=staffname;
+	this.staffID=staffID;
+}
+public String getstaffname() {
+	return staffname;
+}
+public void setstaffname(String staffname) {
+	this.staffname=staffname;
+}
+public String getstaffID() {
+	return staffID;
+}
+public void setstaffID(String staffID) {
+	this.staffID=staffID;
+}
+}
