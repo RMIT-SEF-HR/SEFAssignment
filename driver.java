@@ -33,17 +33,53 @@ System.out.println("Enter password");
 
 				courseCoordinator b=new courseCoordinator(coordinatorname,coordinatorID);
 
+				courseCoordinator[] productsArray = new courseCoordinator[1];
+				for (int i = 0; i < productsArray.length; i++)
+		        {
 				System.out.println("Enter course coordinator's name");
-
 				coordinatorname = scan.nextLine();
-
+				productsArray[i] = b;
+                b.setcoordinatorname(coordinatorname);
 				System.out.println("Enter course coordinator's ID");
-
 				coordinatorID=scan.nextLine();
-/*In the rest of this feature, the course coordinator has to make the job request. After that, he has to make it 
-				available to the casual staff.
-				 */
-	
+				productsArray[i]=b;
+				b.setcoordinatorID(coordinatorID);
+		    
+				productsArray[i]=new courseCoordinator(coordinatorname,coordinatorID);
+		        
+				System.out.printf("%s, %s",
+                        productsArray[i].getcoordinatorname(),
+                        productsArray[i].getcoordinatorID());
+		        }
+				String jobStatus=null;
+				String jobRequestCode=null;
+				String jobRequirement=null;
+				String jobApplicationDate=null;
+				int jobHours=0;
+				JobRequest j=new JobRequest(jobStatus,jobRequestCode,jobRequirement,jobApplicationDate,jobHours);
+				JobRequest[] pArray=new JobRequest[1];
+				for (int i=0;i<pArray.length;i++) {
+					System.out.println("Enter your desired job Request Code");
+					jobRequestCode=scan.nextLine();
+					pArray[i]=j;
+					j.setjobRequestCode(jobRequestCode);
+					System.out.println("Enter the job requirement for your future casual staff");
+					jobRequirement=scan.nextLine();
+					pArray[i]=j;
+					j.setjobRequirement(jobRequirement);
+					System.out.println("Enter the number of hours you want your future casual staff to work");
+					jobHours=scan.nextInt();
+					pArray[i]=j;
+					j.setjobHours(jobHours);
+					
+				pArray[i]=new JobRequest(jobStatus,jobRequestCode,jobRequirement,jobApplicationDate,jobHours);
+				
+				System.out.printf("%s,%s,%d",
+                        pArray[i].getjobRequestCode(),
+                        pArray[i].getjobRequirement(),
+                        pArray[i].setjobHours());
+		        }
+
     				break;
     			  case 3:
     				System.out.println("Approvals");
